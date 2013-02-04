@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!
 
-  after_create :send_welcome_mail
-
   def index
     authorize! :index, @user, :message => 'Not authorized as an administrator.'
     @users = User.all
