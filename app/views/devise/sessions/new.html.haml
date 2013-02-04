@@ -1,7 +1,11 @@
-%h2 Sign in
-= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-vertical' }) do |f|
-  = f.input :email, :autofocus => true
-  = f.input :password
-  = f.input :remember_me, :as => :boolean if devise_mapping.rememberable?
-  = f.button :submit, "Sign in", :class => 'btn-primary'
-= render "devise/shared/links"
+%div.row
+  %div.span4
+    %h2 Sign in
+    = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-vertical well' }) do |f|
+      = f.input :email, :autofocus => true
+      = f.input :password
+      = f.input :remember_me, :as => :boolean if devise_mapping.rememberable?
+      = f.button :submit, "Sign in", :class => 'btn-primary'
+    = render "devise/shared/links"
+  %div.span8
+    %h2 Signing in is easy and secure!

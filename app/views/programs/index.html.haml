@@ -1,0 +1,14 @@
+%h1 helloWorld Programs
+- @programs.each do |program|
+  %h2 #{link_to program.name, program}
+  = program.intro
+  %br
+  = link_to 'Show', program
+  %br
+  = link_to 'Edit', edit_program_path(program)
+  %br
+  = link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Program', new_program_path

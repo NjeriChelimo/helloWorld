@@ -1,4 +1,7 @@
 HelloWorld::Application.routes.draw do
+  resources :programs
+
+
   authenticated :user do
     root :to => 'home#index'
   end
