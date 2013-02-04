@@ -19,8 +19,8 @@ module HelloWorld
   class Application < Rails::Application
 
     config.generators do |g|
-      
-      
+
+
     end
 
     # Settings in config/environments/* take precedence over those specified here.
@@ -72,5 +72,6 @@ module HelloWorld
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    config.assets.initialize_on_precompile = true
   end
 end
