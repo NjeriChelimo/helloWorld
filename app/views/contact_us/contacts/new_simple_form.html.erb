@@ -1,5 +1,5 @@
 <div class='raw'>
-  <div class='span6 email-form'>
+  <div class='span6'>
     <h1>Email Us!</h1>
     <%= simple_form_for @contact, :url => contacts_path do |f| %>
       <%= f.input :name, :label => t('.name') if ContactUs.require_name %>
@@ -13,6 +13,7 @@
     <div class='phone'>
 
     </div>
+
     <h1>Call Us!</h1></br>
     <h2 class='phone-number'>0722838469</h3>
   </div>

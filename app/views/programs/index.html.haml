@@ -1,13 +1,21 @@
 %h1 helloWorld Programs
-- @programs.each do |program|
-  %h2 #{link_to program.name, program}
-  = program.intro
-  %br
-  = link_to 'Show', program
-  %br
-  = link_to 'Edit', edit_program_path(program)
-  %br
-  = link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' }
+%div.row
+  %div.span7
+    - @programs.each do |program|
+      %div.programs
+        %h2 #{link_to program.name, program}
+        = program.intro
+        %br
+        = link_to 'Show', program
+        %br
+        = link_to 'Edit', edit_program_path(program)
+        %br
+        = link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' }
+
+  %div.span4.call-us
+    %h1 Interested? Call Us!
+    %h2.phone-number 0722838469
+
 
 %br
 

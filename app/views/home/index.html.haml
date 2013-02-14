@@ -13,8 +13,9 @@
   %div.span4.programs-intro
     %h1 Our Programs
     - @programs.each do |program|
-      %h2.program-title
-        #{link_to program.name, program}
-      %p
-        = program.intro
-      %br
+      %div.programs
+        %h2.program-title
+          #{link_to program.name, program}
+        %p
+          = program.intro
+        %br
