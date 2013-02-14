@@ -1,12 +1,15 @@
-%h2 What is helloWorld?
-%p
-  helloWorld is a community of budding tech entrepreneurs in Kenya. We offer the following
+%div.row
+  %div.span8
+    %h3 What is helloWorld?
+    %p
+      helloWorld is a community of budding tech entrepreneurs in Kenya. We offer the following
 
-%h2 Why helloWolrd?
+    %h3 Why helloWolrd?
 
-%h4 To Sign up for any of the following programs, please call 0774942505 or 0722838469.
-%br
-- @programs.each do |program|
-  %h2 #{link_to program.name, program}
-  = program.intro
-  %br
+    %p
+      To Sign up for any of the following programs, please call 0774942505 or 0722838469.
+  %div.span4
+    - @programs.each do |program|
+      %h2 #{link_to program.name, program}
+      = program.intro
+      %br
