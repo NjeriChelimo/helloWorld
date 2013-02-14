@@ -46,6 +46,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    contact_us (0.4.0)
+      rails (>= 3.0.0)
     daemons (1.1.9)
     devise (2.2.3)
       bcrypt-ruby (~> 3.0)
@@ -162,6 +164,7 @@ DEPENDENCIES
   bootstrap-sass (>= 2.2.2.0)
   cancan (>= 1.6.8)
   coffee-rails (~> 3.2.1)
+  contact_us (~> 0.4.0)
   devise (>= 2.2.3)
   factory_girl_rails (>= 4.2.0)
   figaro (>= 0.5.3)

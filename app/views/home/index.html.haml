@@ -1,15 +1,20 @@
 %div.row
-  %div.span8
-    %h3 What is helloWorld?
-    %p
-      helloWorld is a community of budding tech entrepreneurs in Kenya. We offer the following
+  %div.span7
+    %div.hello-world
+      %h1 What is helloWorld?
+      %p
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
 
-    %h3 Why helloWolrd?
-
-    %p
-      To Sign up for any of the following programs, please call 0774942505 or 0722838469.
-  %div.span4
+    %div.hello-world
+      %h1.why Why helloWolrd?
+      %p
+        To Sign up for any of the following programs, please call 0774942505 or 0722838469.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+  %div.span4.programs-intro
+    %h1 Our Programs
     - @programs.each do |program|
-      %h2 #{link_to program.name, program}
-      = program.intro
+      %h2.program-title
+        #{link_to program.name, program}
+      %p
+        = program.intro
       %br

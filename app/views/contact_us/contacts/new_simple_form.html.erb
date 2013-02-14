@@ -1,0 +1,19 @@
+<div class='raw'>
+  <div class='span6 email-form'>
+    <h1>Email Us!</h1>
+    <%= simple_form_for @contact, :url => contacts_path do |f| %>
+      <%= f.input :name, :label => t('.name') if ContactUs.require_name %>
+      <%= f.input :email, :label => t('.email') %>
+      <%= f.input :subject, :label => t('.subject') if ContactUs.require_subject %>
+      <%= f.input :message, :as => :text, :input_html => { :cols => 50, :rows => 8 }, :label => t('.message') %>
+      <%= f.button :submit, :label => t('.submit'), :button_html => { :alt => t('.submit'), :id => 'contact_us_contact_submit' } %>
+    <% end %>
+  </div>
+  <div class='span5 pull-right'>
+    <div class='phone'>
+
+    </div>
+    <h1>Call Us!</h1></br>
+    <h2 class='phone-number'>0722838469</h3>
+  </div>
+</div>
