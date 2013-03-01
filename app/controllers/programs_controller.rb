@@ -34,7 +34,7 @@ class ProgramsController < ApplicationController
 
   # GET /programs/1/edit
   def edit
-    @program = Program.find(params[:id])
+    @program = Program.find_by_name(params[:id])
   end
 
   # POST /programs
@@ -56,7 +56,7 @@ class ProgramsController < ApplicationController
   # PUT /programs/1
   # PUT /programs/1.json
   def update
-    @program = Program.find(params[:id])
+    @program = Program.find_by_name(params[:id])
 
     respond_to do |format|
       if @program.update_attributes(params[:program])
@@ -72,7 +72,7 @@ class ProgramsController < ApplicationController
   # DELETE /programs/1
   # DELETE /programs/1.json
   def destroy
-    @program = Program.find(params[:id])
+    @program = Program.find_by_name(params[:id])
     @program.destroy
 
     respond_to do |format|
