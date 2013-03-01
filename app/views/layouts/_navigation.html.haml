@@ -1,22 +1,9 @@
-= link_to "helloWorld", root_path, :class => 'brand'
+= link_to "HelloWorld", root_path, :class => 'brand'
 %ul.nav
   %li
     = link_to "Programs", programs_path
   %li
     = link_to "Contact Us", new_contact_path
 %ul.nav.pull-right
-  - if user_signed_in?
-    %li
-      = link_to 'Logout', destroy_user_session_path, :method=>'delete'
-  - else
-    %li
-      = link_to 'Login', new_user_session_path
-  - if user_signed_in?
-    %li
-      = link_to 'Edit account', edit_user_registration_path
-    - if current_user.has_role? :admin
-      %li
-        = link_to 'Admin', users_path
-  - else
-    %li
-      = link_to 'Sign up', new_user_registration_path
+  %li
+    %a{ :href => 'mailto:help@helloworld.co.ke?Subject=I%20want%20to%20Join%20helloWolrd!', :class => ''} Join HelloWorld

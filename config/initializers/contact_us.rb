@@ -9,7 +9,7 @@ ContactUs.setup do |config|
   config.mailer_from = nil
 
   # Configure the e-mail address which should receive the contact form email notifications.
-  config.mailer_to = "martha@helloworld.co.ke"
+  config.mailer_to = "help@helloworld.co.ke"
 
   # ==> Form Configuration
 

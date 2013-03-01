@@ -13,7 +13,7 @@ class ProgramsController < ApplicationController
   # GET /programs/1
   # GET /programs/1.json
   def show
-    @program = Program.find(params[:id])
+    @program = Program.find_by_name(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
