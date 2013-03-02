@@ -1,6 +1,9 @@
 %div.row
   %div.span7
-    %a{ :href => 'mailto:help@helloworld.co.ke?Subject=I%20want%20to%20Join%20helloWolrd!', :class => 'btn btn-primary btn-large'} Join HelloWorld!
+    %a.span2{ :href => 'mailto:help@helloworld.co.ke?Subject=I%20want%20to%20Join%20helloWolrd!', :class => 'btn btn-primary btn-large'} Join HelloWorld!
+    %a.span2{ :href=>"https://twitter.com/HelloWorldKE", :class=>"twitter-follow-button", 'data-show-count'=>"false" }Follow @HelloWorldKE
+    %span.span2
+      = render :partial => 'like.html'
     %div.hello-world
       %h1.why The New Geek on the block!
       %p
@@ -23,14 +26,6 @@
     %div.hello-world.join-now
       %a{ :href => 'mailto:help@helloworld.co.ke?Subject=I%20want%20to%20Join%20helloWolrd!', :class => 'btn btn-primary btn-large join-btn'} Join HelloWorld!
   %div.span4.programs-intro
-    %div.follow-us
-      %p
-        Connect with us!
-      %a{ :href=>"https://twitter.com/HelloWorldKE", :class=>"twitter-follow-button", 'data-show-count'=>"false" }Follow @HelloWorldKE
-
-      = render :partial => 'like.html'
-
-
     %h1 Our Programs
     - @programs.each do |program|
       %div.programs
